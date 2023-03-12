@@ -120,7 +120,7 @@ img {
   background-color: var(--black-color);
   color: var(--just-white-color);
   text-align: center;
-  width: 1440px;
+  /*width: 1440px;*/
   height: 600px;
   margin: 0 auto;
 }
@@ -130,9 +130,12 @@ img {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  margin: 0 auto;
   margin-top: 0;
   margin-bottom: 48px;
-  padding: 188px 472px 0;
+  padding: 188px 0 0;
+  width: 496px;
+  height: 120px;
 }
 .hero-button {
   /* Text button */
@@ -151,6 +154,7 @@ img {
   padding: 16px 32px;
   min-width: 169px;
   min-height: 56px;
+  margin: 0 auto;
 }
 
 .hero-button:focus,
@@ -163,10 +167,14 @@ img {
   margin: 0 auto;
   width: 1128px;
   outline: 2px solid red;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*INFORMATION*/
-
+.information {
+  padding-top: 120px;
+}
 .information-header {
   display: none;
   visibility: hidden;
@@ -179,20 +187,42 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .information-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-top: 8px;
+  margin-bottom: 0;
+  width: 264px;
 }
 
 /*examples*/
+
+.examples {
+  padding-top: 120px;
+}
+
+.examples-title {
+  margin: 0;
+}
+
+.examples .list {
+  margin-top: 72px;
+}
+
+.examples .list > li {
+  margin-right: 24px;
+}
 
 /*TEAM*/
 
 .team {
   background-color: var(--light-color);
+  padding-top: 120px;
+  margin-top: 120px;
 }
 
 .team-card {
@@ -217,8 +247,14 @@ img {
   letter-spacing: 0.02em;
 }
 
+.team-list {
+  margin-top: 72px;
+  padding-bottom: 120px;
+}
+
 .team-logo {
   letter-spacing: 0.02em;
+  margin: 0 auto;
 }
 
 /*......END MAIN......*/
@@ -226,6 +262,10 @@ img {
 /*...MAIN PORFOLIO...*/
 
 /*PORTFOLIO (class)*/
+
+.button-list {
+  padding-top: 96px;
+}
 
 .portfolio-button {
   color: var(--main-logo-color);
@@ -258,6 +298,14 @@ img {
   letter-spacing: 0.02em;
   color: var(--standart-color);
 }
+
+.photo-list {
+  padding-top: 72px;
+}
+
+.portfolio > .container {
+  padding-bottom: 120px;
+}
 /*...END PORFOLIO...*/
 
 /*......FOOTER......*/
@@ -272,12 +320,18 @@ img {
 .footer-logo > span {
   color: var(--light-color);
 }
-
+.footer > .container {
+  padding-top: 105.5px;
+  padding-bottom: 100px;
+}
 .footer-text {
   color: var(--footer-text-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 264px;
+  height: 72px;
+  margin-top: 17.5px;
 }
 
 .footer-span {
