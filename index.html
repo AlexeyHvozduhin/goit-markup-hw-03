@@ -19,8 +19,8 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav class="nav link">
+      <div class="container nav-container">
+        <nav class="navigation">
           <a href="./index.html" class="nav-logo link"
             >Web<span>Studio</span></a
           >
@@ -50,50 +50,72 @@
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button type="button" class="hero-button">Order Service</button>
+        <!-- <h1 class="hero-title">Effective Solutions for Your Business</h1>
+
+        <button type="button" class="hero-button">Order Service</button> -->
+
+        <h1 class="hero-title" id="myParagraph">
+          Effective Solutions for Your Business
+        </h1>
+        <button
+          type="button"
+          class="hero-button"
+          onmousedown="addShadow()"
+          onmouseup="removeShadow()"
+        >
+          <script>
+            function addShadow() {
+              var para = document.getElementById('myParagraph');
+              para.classList.add('button-pressed');
+            }
+
+            function removeShadow() {
+              var para = document.getElementById('myParagraph');
+              para.classList.remove('button-pressed');
+            }
+          </script>
+          Order Service
+        </button>
       </section>
 
       <section class="information">
-        <div class="container">
-          <h2 class="information-header">Information</h2>
-          <ul class="information-list list">
-            <li>
-              <h3 class="information-title">Strategy</h3>
-              <p class="information-text">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
-              </p>
-            </li>
-            <li>
-              <h3 class="information-title">Punctuality</h3>
-              <p class="information-text">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
-              </p>
-            </li>
-            <li>
-              <h3 class="information-title">Diligence</h3>
-              <p class="information-text">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
-              </p>
-            </li>
-            <li>
-              <h3 class="information-title">Technologies</h3>
-              <p class="information-text">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
-              </p>
-            </li>
-          </ul>
-        </div>
+        <h2 class="information-header">Information</h2>
+        <ul class="information-list list container">
+          <li>
+            <h3 class="information-title">Strategy</h3>
+            <p class="information-text">
+              Our goal is to identify the business problem to walk away with the
+              perfect and creative solution.
+            </p>
+          </li>
+          <li>
+            <h3 class="information-title">Punctuality</h3>
+            <p class="information-text">
+              Bring the key message to the brand's audience for the best price
+              within the shortest possible time.
+            </p>
+          </li>
+          <li>
+            <h3 class="information-title">Diligence</h3>
+            <p class="information-text">
+              Research and confirm brands that present the strongest digital
+              growth opportunities and minimize risk.
+            </p>
+          </li>
+          <li>
+            <h3 class="information-title">Technologies</h3>
+            <p class="information-text">
+              Design practice focused on digital experiences. We bring forth a
+              deep passion for problem-solving.
+            </p>
+          </li>
+        </ul>
       </section>
 
       <section class="section examples">
         <div class="container">
           <h2 class="section-title examples-title">What are we doing</h2>
-          <ul class="list">
+          <ul class="examples-list list">
             <li>
               <img
                 src="./images/section2/1.jpg"
